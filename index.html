@@ -6,7 +6,6 @@
     <title>Hayden's Cozy Creations</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <style>
-        /* Basic reset for professionalism */
         * {
             margin: 0;
             padding: 0;
@@ -14,105 +13,164 @@
         }
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4; /* Cool gray */
+            background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
         }
         header {
-            background-color: #001f3f; /* Dark navy */
+            background-color: #001f3f;
             text-align: center;
-            padding: 30px 20px;
+            padding: 2rem 1rem;
             color: #fff;
         }
-        h1, h2 {
-            font-weight: 500;
-            color: inherit;
+        header img {
+            max-width: 150px; /* Adjust based on your logo size */
+            height: auto;
+            margin-bottom: 1rem;
         }
         h1 {
-            font-size: 2.5em;
+            font-size: clamp(1.8rem, 5vw, 2.2rem);
+            font-weight: 500;
+        }
+        h2 {
+            font-size: clamp(1.4rem, 4vw, 1.8rem);
+            font-weight: 500;
+            margin-bottom: 1rem;
         }
         nav {
-            background-color: #001f3f; /* Match header */
-            text-align: center;
-            padding: 10px;
+            background-color: #001f3f;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
         nav a {
-            margin: 0 20px;
+            margin: 0 1rem;
             text-decoration: none;
             color: #fff;
             font-weight: 300;
+            font-size: clamp(0.9rem, 3vw, 1rem);
+            padding: 0.5rem 1rem;
             transition: color 0.3s;
         }
         nav a:hover {
-            color: #007b7f; /* Teal accent */
+            color: #007b7f;
         }
         section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 30px;
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1.5rem;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
+        .carousel {
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .carousel-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .carousel-item {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+        }
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .carousel-controls button {
+            background: rgba(0,0,0,0.5);
+            color: #fff;
+            border: none;
+            padding: 0.5rem;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background 0.3s;
+        }
+        .carousel-controls button:hover {
+            background: #007b7f;
+        }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+            gap: 1rem;
             justify-items: center;
         }
         .gallery img {
             width: 100%;
-            max-width: 250px;
+            max-width: 300px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
         }
         .gallery img:hover {
-            transform: translateY(-5px); /* Subtle lift effect */
+            transform: translateY(-5px);
         }
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 1.5rem;
             background-color: #001f3f;
             color: #fff;
-            margin-top: 40px;
         }
         form input, form textarea {
             width: 100%;
-            padding: 10px;
-            margin: 10px 0;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
             border: 1px solid #ccc;
             border-radius: 4px;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
         }
         form input[type="submit"] {
             background-color: #007b7f;
             color: #fff;
             border: none;
             cursor: pointer;
+            padding: 0.8rem 1.5rem;
             transition: background 0.3s;
         }
         form input[type="submit"]:hover {
             background-color: #005f62;
         }
+        @media (max-width: 600px) {
+            header {
+                padding: 1.5rem 0.5rem;
+            }
+            header img {
+                max-width: 120px; /* Smaller logo on mobile */
+            }
+            nav a {
+                margin: 0 0.5rem;
+                padding: 0.5rem;
+                display: inline-block;
+            }
+            section {
+                margin: 1rem;
+                padding: 1rem;
+            }
+            .carousel-controls button {
+                padding: 0.3rem;
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <!-- B&W Yarn Bear Sketch SVG (professional yet hand-drawn) -->
-        <svg width="150" height="150" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <!-- Bear head -->
-            <circle cx="100" cy="80" r="50" stroke="#fff" stroke-width="4" fill="none" stroke-dasharray="5,5"/> <!-- White for contrast on dark bg -->
-            <!-- Ears -->
-            <circle cx="60" cy="40" r="20" stroke="#fff" stroke-width="4" fill="none" stroke-dasharray="5,5"/>
-            <circle cx="140" cy="40" r="20" stroke="#fff" stroke-width="4" fill="none" stroke-dasharray="5,5"/>
-            <!-- Eyes -->
-            <circle cx="80" cy="70" r="5" fill="#fff"/>
-            <circle cx="120" cy="70" r="5" fill="#fff"/>
-            <!-- Nose and mouth -->
-            <path d="M100 90 Q 95 100, 100 100 T 105 100" stroke="#fff" stroke-width="4" fill="none"/>
-            <!-- Yarn swirl -->
-            <path d="M100 130 Q 120 150, 140 130 T 160 150" stroke="#fff" stroke-width="4" fill="none" stroke-dasharray="5,5"/>
-        </svg>
+        <img src="images/logo.png" alt="Hayden's Cozy Creations Logo">
         <h1>Hayden's Cozy Creations</h1>
     </header>
     
@@ -126,19 +184,38 @@
     
     <section id="home">
         <h2>Welcome</h2>
-        <p>Hi, I'm Hayden, a 14-year-old crochet artisan specializing in handmade stuffed animals. Each piece is crafted with care, blending creativity and comfort. Explore my work below.</p>
+        <p>Hi, I'm Hayden, a 14-year-old crochet artisan creating unique stuffed animals. Each piece is handcrafted with care, blending creativity and comfort. Explore my work below.</p>
     </section>
     
     <section id="about">
         <h2>About Me</h2>
-        <p>Drawing inspiration from sketches and yarn, I create unique stuffed animals. Here's a black-and-white sketch of one of my designs—upload your own to personalize.</p>
-        <!-- Placeholder for hand-drawn work -->
+        <p>Drawing inspiration from my sketches and yarn, I craft one-of-a-kind stuffed animals. Here's a black-and-white sketch of a favorite design—upload your own to personalize.</p>
         <img src="https://via.placeholder.com/400x250?text=Your+B&W+Sketch" alt="Hand-drawn sketch" style="max-width: 100%;">
     </section>
     
     <section id="gallery">
         <h2>Gallery</h2>
-        <p>View my crocheted creations and hand-drawn patterns, featuring a mix of color photos and B&W sketches.</p>
+        <p>Explore my crocheted creations and hand-drawn patterns, showcasing both colorful pieces and B&W sketches.</p>
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/600x400?text=Stuffed+Bear" alt="Crocheted Bear">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/600x400?text=B&W+Drawing" alt="Hand-drawn Pattern">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/600x400?text=Stuffed+Frog" alt="Crocheted Frog">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/600x400?text=Sketch+Idea" alt="B&W Sketch">
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button onclick="moveCarousel(-1)">&#10094;</button>
+                <button onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+        </div>
         <div class="gallery">
             <img src="https://via.placeholder.com/250?text=Stuffed+Bear" alt="Crocheted Bear">
             <img src="https://via.placeholder.com/250?text=B&W+Drawing" alt="Hand-drawn Pattern">
@@ -149,7 +226,7 @@
     
     <section id="shop">
         <h2>Shop</h2>
-        <p>Interested in owning one? Browse my collection or request custom orders. Prices start at $10.</p>
+        <p>Want to own one? Browse my collection or request custom orders. Prices start at $10.</p>
         <a href="https://www.etsy.com" style="color: #007b7f; text-decoration: none; font-weight: bold;">Visit Shop</a>
     </section>
     
@@ -170,5 +247,37 @@
     <footer>
         <p>&copy; 2025 Hayden's Cozy Creations. Crafted with precision.</p>
     </footer>
+
+    <script>
+        // Smooth scroll for nav links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Carousel functionality
+        let currentIndex = 0;
+        const carousel = document.querySelector('.carousel-container');
+        const items = document.querySelectorAll('.carousel-item');
+        const totalItems = items.length;
+
+        function moveCarousel(direction) {
+            currentIndex = (currentIndex + direction + totalItems) % totalItems;
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        // Auto-rotate carousel every 5 seconds
+        setInterval(() => moveCarousel(1), 5000);
+
+        // Prevent form submission (for demo)
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Form submitted! Add backend to process this.');
+        });
+    </script>
 </body>
 </html>
