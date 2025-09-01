@@ -77,6 +77,8 @@
         .carousel-item img {
             width: 100%;
             height: auto;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
             border-radius: 8px;
             display: block;
         }
@@ -99,22 +101,6 @@
         }
         .carousel-controls button:hover {
             background: #005f62; /* Darker teal */
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
-            gap: 1rem;
-            justify-items: center;
-        }
-        .gallery img {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        .gallery img:hover {
-            transform: translateY(-5px);
         }
         footer {
             text-align: center;
@@ -191,32 +177,44 @@
     
     <section id="gallery">
         <h2>Gallery</h2>
-        <p>Explore my crocheted creations and hand-drawn patterns, showcasing both colorful pieces and B&W sketches.</p>
+        <p>Explore my crocheted creations, showcasing colorful handmade plushies.</p>
         <div class="carousel">
             <div class="carousel-container">
                 <div class="carousel-item">
-                    <img src="https://via.placeholder.com/600x400?text=Stuffed+Bear" alt="Crocheted Bear">
+                    <img src="images/bear.jpeg" alt="Crocheted Bear Plushie">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://via.placeholder.com/600x400?text=B&W+Drawing" alt="Hand-drawn Pattern">
+                    <img src="images/bee.jpeg" alt="Crocheted Bee Plushie">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://via.placeholder.com/600x400?text=Stuffed+Frog" alt="Crocheted Frog">
+                    <img src="images/bunny.jpeg" alt="Crocheted Bunny Plushie">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://via.placeholder.com/600x400?text=Sketch+Idea" alt="B&W Sketch">
+                    <img src="images/evilbunny.jpeg" alt="Crocheted Evil Bunny Plushie">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/frog.jpeg" alt="Crocheted Frog Plushie">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/jellyfish.jpeg" alt="Crocheted Jellyfish Plushie">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/jellyfishcrop.jpeg" alt="Cropped Crocheted Jellyfish Plushie">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/largeturtle.jpeg" alt="Crocheted Large Turtle Plushie">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/loafcat.jpeg" alt="Crocheted Loaf Cat Plushie">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/octopus.jpeg" alt="Crocheted Octopus Plushie">
                 </div>
             </div>
             <div class="carousel-controls">
                 <button onclick="moveCarousel(-1)">&#10094;</button>
                 <button onclick="moveCarousel(1)">&#10095;</button>
             </div>
-        </div>
-        <div class="gallery">
-            <img src="https://via.placeholder.com/250?text=Stuffed+Bear" alt="Crocheted Bear">
-            <img src="https://via.placeholder.com/250?text=B&W+Drawing" alt="Hand-drawn Pattern">
-            <img src="https://via.placeholder.com/250?text=Stuffed+Frog" alt="Crocheted Frog">
-            <img src="https://via.placeholder.com/250?text=Sketch+Idea" alt="B&W Sketch">
         </div>
     </section>
 
