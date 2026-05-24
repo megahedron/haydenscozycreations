@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>Hayden&#x27;s Cozy Creations</title>
+    <link href="https://megahedron.github.io/haydenscozycreations/feed.xml" rel="self" />
+    <link href="https://megahedron.github.io/haydenscozycreations" />
+    <updated>2026-05-23T20:51:18-04:00</updated>
+    <author>
+        <name>Hayden</name>
+    </author>
+    <id>https://megahedron.github.io/haydenscozycreations</id>
+
+    <entry>
+        <title>Contact</title>
+        <author>
+            <name>Hayden</name>
+        </author>
+        <link href="https://megahedron.github.io/haydenscozycreations/contact.html"/>
+        <id>https://megahedron.github.io/haydenscozycreations/contact.html</id>
+
+        <updated>2026-05-23T20:39:09-04:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    For inquiries or custom requests, reach out via email at haydenscozycreations@gmail.com
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <section id="contact" class="visible">
+<p>For inquiries or custom requests, reach out via email at<a href="mailto:haydenscozycreations@gmail.com"> haydenscozycreations@gmail.com</a></p>
+</section>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>About Me</title>
+        <author>
+            <name>Hayden</name>
+        </author>
+        <link href="https://megahedron.github.io/haydenscozycreations/about-me.html"/>
+        <id>https://megahedron.github.io/haydenscozycreations/about-me.html</id>
+
+        <updated>2026-05-23T20:38:25-04:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Hi, I'm Hayden, I am a 14-year-old crochet artist. I love to crochet as a hobby and once I found out I could&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Hi, I'm Hayden, I am a 14-year-old crochet artist. I love to crochet as a hobby and once I found out I could make my hobby into a business I was so exicted!</p>
+<figure class="post__image post__image--wide"><img loading="lazy"  src="https://megahedron.github.io/haydenscozycreations/media/posts/3/hayden.jpg" alt="Hayden" width="1081" height="540" sizes="(max-width: 48em) 100vw, 768px" srcset="https://megahedron.github.io/haydenscozycreations/media/posts/3/responsive/hayden-xs.jpg 300w ,https://megahedron.github.io/haydenscozycreations/media/posts/3/responsive/hayden-sm.jpg 480w ,https://megahedron.github.io/haydenscozycreations/media/posts/3/responsive/hayden-md.jpg 768w ,https://megahedron.github.io/haydenscozycreations/media/posts/3/responsive/hayden-lg.jpg 1024w ,https://megahedron.github.io/haydenscozycreations/media/posts/3/responsive/hayden-xl.jpg 1360w ,https://megahedron.github.io/haydenscozycreations/media/posts/3/responsive/hayden-2xl.jpg 1600w"></figure>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Gallery</title>
+        <author>
+            <name>Hayden</name>
+        </author>
+        <link href="https://megahedron.github.io/haydenscozycreations/gallery.html"/>
+        <id>https://megahedron.github.io/haydenscozycreations/gallery.html</id>
+
+        <updated>2026-05-23T20:30:47-04:00</updated>
+            <summary></summary>
+        <content type="html">
+            <![CDATA[
+                <div class="gallery-wrapper gallery-wrapper--full"><div class="gallery" data-is-empty="false" data-translation="Add images" data-columns="2">
+<figure class="gallery__item"><a href="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/bear.jpeg" data-size="2558x1923"><img loading="lazy" src="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/bear-thumbnail.jpeg" alt="" width="720" height="541"></a></figure>
+<figure class="gallery__item"><a href="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/bee.jpeg" data-size="2130x1598"><img loading="lazy" src="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/bee-thumbnail.jpeg" alt="" width="720" height="540"></a></figure>
+<figure class="gallery__item"><a href="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/bunny.jpeg" data-size="3024x2275"><img loading="lazy" src="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/bunny-thumbnail.jpeg" alt="" width="720" height="541"></a></figure>
+<figure class="gallery__item"><a href="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/evilbunny.jpeg" data-size="3024x2268"><img loading="lazy" src="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/evilbunny-thumbnail.jpeg" alt="" width="720" height="540"></a></figure>
+<figure class="gallery__item"><a href="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/frog.jpeg" data-size="3024x2268"><img loading="lazy" src="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/frog-thumbnail.jpeg" alt="" width="720" height="540"></a></figure>
+<figure class="gallery__item"><a href="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/jellyfish.jpeg" data-size="2922x3609"><img loading="lazy" src="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/jellyfish-thumbnail.jpeg" alt="" width="720" height="889"></a></figure>
+<figure class="gallery__item"><a href="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/jellyfishcrop.jpeg" data-size="2922x2192"><img loading="lazy" src="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/jellyfishcrop-thumbnail.jpeg" alt="" width="720" height="540"></a></figure>
+<figure class="gallery__item"><a href="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/largeturtle.jpeg" data-size="3024x2261"><img loading="lazy" src="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/largeturtle-thumbnail.jpeg" alt="" width="720" height="538"></a></figure>
+<figure class="gallery__item"><a href="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/loafcat.jpeg" data-size="3024x2285"><img loading="lazy" src="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/loafcat-thumbnail.jpeg" alt="" width="720" height="544"></a></figure>
+<figure class="gallery__item"><a href="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/octopus.jpeg" data-size="3024x2277"><img loading="lazy" src="https://megahedron.github.io/haydenscozycreations/media/posts/2/gallery/octopus-thumbnail.jpeg" alt="" width="720" height="542"></a></figure>
+</div></div>
+            ]]>
+        </content>
+    </entry>
+</feed>
